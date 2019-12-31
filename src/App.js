@@ -36,8 +36,8 @@ class App extends Component {
     return (
       <div className="container">
         <h1 className="text-center text-primary mt-5 mb-3">Todo's</h1> 
-        <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
         <AddTodo addTodo={this.addTodo} />
+        <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
 
       </div>
     )
