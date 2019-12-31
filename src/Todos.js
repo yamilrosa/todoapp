@@ -1,12 +1,13 @@
 import React from 'react';
 
+
 const Todos = (props) => {
 
 
     const todoList = props.todos.length ? (
         props.todos.map(todo => {
             return (
-                <li className="list-group-item" key={todo.id}>{todo.content} <span onClick={() => {props.deleteTodo(todo.id)}} className="float-right"><i class="far fa-trash-alt"></i></span></li>
+                <li className="list-group-item" key={todo.id}>{todo.content} <span onClick={() => {props.deleteTodo(todo.id)}} className="float-right"><i className="far fa-trash-alt"></i></span></li>
             )
         })
     ) : (
